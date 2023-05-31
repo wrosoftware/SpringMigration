@@ -10,7 +10,7 @@ import static com.wsa.spring.migration.springmigration.product.domain.QProduct.p
 
 @Service
 @RequiredArgsConstructor
-public class ProductService {
+class ProductService {
 
     private final ProductRepository productRepository;
     private final JPAQueryFactory jpaQueryFactory;
