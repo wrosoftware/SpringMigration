@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ProductService {
+class ProductService {
 
     private final ProductRepository productRepository;
 
