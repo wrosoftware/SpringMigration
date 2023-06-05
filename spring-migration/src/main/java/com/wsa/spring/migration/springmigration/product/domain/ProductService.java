@@ -1,10 +1,12 @@
 package com.wsa.spring.migration.springmigration.product.domain;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Log4j2
 @Service
 @RequiredArgsConstructor
 public class ProductService {
@@ -17,6 +19,7 @@ public class ProductService {
     }
 
     public List<String> getAllNames() {
+        log.info("getAllNames logging");
         return productRepository.findAll()
                 .stream()
                 .map(Product::getName)
