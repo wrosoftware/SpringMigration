@@ -3,6 +3,7 @@ package com.wsa.spring.migration.springmigration.product.domain;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 @Service
@@ -10,6 +11,7 @@ import java.util.List;
 public class ProductService {
 
     private final ProductRepository productRepository;
+    private final EntityManager em;
 
     public void saveProduct(String productName, String description) {
         Product product = createProduct(productName, description);
@@ -17,10 +19,8 @@ public class ProductService {
     }
 
     public List<String> getAllNames() {
-        return productRepository.findAll()
-                .stream()
-                .map(Product::getName)
-                .toList();
+        return em.createQuery("SELECT p.name FROM Product p")
+                .getResultList();
     }
 
     private Product createProduct(String productName, String description) {
