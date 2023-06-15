@@ -3,7 +3,6 @@ package com.wsa.spring.migration.springmigration.product.domain;
 import com.wsa.spring.migration.springmigration.product.ProductApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import javax.transaction.Transactional;
