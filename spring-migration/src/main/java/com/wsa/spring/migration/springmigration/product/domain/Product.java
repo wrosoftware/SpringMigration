@@ -1,15 +1,11 @@
 package com.wsa.spring.migration.springmigration.product.domain;
 
 import jakarta.persistence.Column;
-import lombok.Data;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.annotations.Type;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import org.hibernate.type.SqlTypes;
+import lombok.Data;
 
 import java.math.BigDecimal;
 
