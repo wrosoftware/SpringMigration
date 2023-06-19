@@ -11,7 +11,7 @@
 
 	<groupId>com.wsa.spring.migration</groupId>
 	<artifactId>spring-migration</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>spring-migration</name>
 	<description>Demo project for migration to  Spring Boot 3.0.x</description>
 
